@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 align="center">Names & Salaries</h2>
+
+    <table align="center" border="1" width="400">
+        <tr><td align="center" colspan="2">Salary Adjustment</td></tr>
+        <tr><td><p id="name"></p></td><td><p id="salary$"></p></td></tr>
+    </table>
+
+<script>
+
+const salary = [1100, 2000, 3400, 3500];
+const name = ["Peter","John","Sam","Jeo"];
+
+let i = 0;
+let len = salary.length;
+let text = "";
+
+let j = 0;
+let len1 = name.length;
+let text1 = "";
+
+for (; i < len; ) {
+  text += salary[i] + "<br>";
+  i++;
+}
+
+for (; j < len1; ) {
+  text1 += name[j] + "<br>";
+  j++;
+}
+
+document.getElementById("salary$").innerHTML = text;
+document.getElementById("name").innerHTML = text1;
+
+</script>
+</body>
+</html>
